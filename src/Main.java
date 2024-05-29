@@ -1,15 +1,26 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Juegos Juego1 =new Juegos("CoD","Accion",9," Es un juego de guerra multijugador");
+        Videojuegos Videojuegos1 = new Videojuegos("RE3","Terror",8,"Un juego basado en sustos","CAPCOM","Multiplataforma",30.00);
+        juegosAccion APEX_LEGENDS = new juegosAccion("Apex Legends","shooter",9,"exelente juego multijugador","Respawn Entertaiment","Multiplataforma",0.0,20,500,"Facil");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+
+        Juego1.Informacionjuego();
+        Juego1.Opinionjuego();
+        Videojuegos1.Informacionjuego();
+        Videojuegos1.Datosadicionales();
+        Videojuegos1.DescuentoMayorista();
+        Videojuegos1.Opinionjuego();
+        APEX_LEGENDS.Informacionjuego();
+        APEX_LEGENDS.Opinionjuego();
+        APEX_LEGENDS.MostrarDatosinternosdeljuego();
+        APEX_LEGENDS.Datosadicionales();
+        APEX_LEGENDS.DescuentoMayorista();
+
+
+
+
+
     }
 }
